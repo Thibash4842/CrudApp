@@ -58,5 +58,5 @@ app.patch("/users/:id",(req,res)=>{
  
 
 app.listen(port, (error) => {
-    console.log(`App is running in port ${port}`)
+    console.log(`App is running in port ${port}`,error)
 });

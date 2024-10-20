@@ -34,6 +34,7 @@ function App() {
     if (isConfirmed) {
       await axios.delete(`http://localhost:8000/users/${id}`).then
         ((res) => {
+          console.log(res.data)
           setUsers(res.data);
           setFilterUser(res.data);
         });
@@ -72,7 +73,6 @@ function App() {
   }
   closeModel();
   setUserData({name:"",age:"",city:""});
-
 }
 
   // update user function
